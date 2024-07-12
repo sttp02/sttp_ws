@@ -18,4 +18,4 @@ jobs:
       - name: Set Up Python 3.12.4
         uses: actions/checkout@v3
         with:
-          python-version: "3.12.4"
+          python-version: "3.12"
