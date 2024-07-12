@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: unbuntu-latest
 
     steps:
       - users: actions/checkout@v3
