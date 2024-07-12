@@ -18,11 +18,17 @@ estimators:
   ElasticNet:
     params:
       alpha: 0.9
-      l1_ratio: 0.7
+      l1_ratio: 0.6
 
-model_dir: models/model_insurance.pkl
+model_dir: models/models.joblib
 
 reports:
   params: reports/params.json
   score: reports/score.json
   
+mlflow_config:
+  artifacts_dir: artifact
+  experiment_name: ElasticNet_Regression
+  run_name: mloops
+  registered_model_name: ElasticNet_Model
+  remote_server_uri: http://127.0.0.1:5000
